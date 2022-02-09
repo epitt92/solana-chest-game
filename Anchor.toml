@@ -1,0 +1,12 @@
+[programs.devnet]
+treasure_chest_program = "6uNxBGP4vdnzzv8YxeubEwFmjCun5qccA2kDyPJLGTuu"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/anchor.json"
+
+[scripts]
+test = "ts-mocha --bail -e -j 1 -p tsconfig.json -t 1000000 tests/*.ts"
